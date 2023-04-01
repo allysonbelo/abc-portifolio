@@ -17,3 +17,22 @@ function abcdev_load_scripts()
     //Javascript - End
 }
 add_action('wp_enqueue_scripts', 'abcdev_load_scripts');
+
+//Add google analytics tag
+function add_google_analytics_tag()
+{ ?>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MGXK3KY50Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MGXK3KY50Z');
+    </script>
+<?php
+}
+add_action('wp_head', 'add_google_analytics_tag');
