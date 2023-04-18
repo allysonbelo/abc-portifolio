@@ -1,0 +1,29 @@
+:root{
+  --color-orange: #FF6610;
+  --color-bg: #36373C;
+  --color-white: #FFFFFF;
+  --color-bg-black: #36373C;
+  --color-bg-medium: #2C2D32;
+}
+
+html {
+  background-color: var(--color-bg-black);
+}
+
+.full-wrapper {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.wrapper{
+  max-width: 1200px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif; */

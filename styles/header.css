@@ -1,0 +1,153 @@
+html, body {
+  cursor: default !important;
+}
+
+.header {
+  height: 120px;
+  width: 100%;
+  /* max-width: 1200px; */
+  color: var(--color-white);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_dropdown {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.btn_dropdown{
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  user-select: none;
+}
+
+.btn_dropdown .line {
+  width: 20px;
+  height: 2px;
+  background-color: var(--color-white);
+  display: flex;
+  transition: transform 1s;
+}
+
+.line1.active {
+  transform: rotate(45deg);
+  position: absolute;
+  background-color: var(--color-orange);
+}
+
+.line2.active {
+  display: none;
+}
+
+.line3.active {
+  transform: rotate(-45deg);
+  position: absolute;
+  cursor: none;
+  background-color: var(--color-orange);
+}
+
+.mobile {
+  position: relative;
+}
+
+.menu-mobile {
+  right: -999px;
+  top: 30px;
+  position: absolute;
+  transition: right .3s;
+}
+
+.menu-mobile.active {
+  position: absolute;
+  right: 90px;
+  top: 30px;
+}
+
+.menu-mobile ul {
+  display: flex;
+  row-gap: 10px;
+  flex-direction: column;
+  position: absolute;
+  align-items: flex-end;
+  background-color: red;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu-mobile ul li{
+  margin-right: 10px;
+}
+
+.header__wrapper .desktop {
+  display: none;
+}
+
+.header__wrapper {
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__wrapper .logo {
+  width: 80px;
+  overflow: hidden;
+  animation: teste 2s 1s forwards;
+  transform: scale(.6);
+}
+
+
+.header__wrapper .logo img {
+  max-height: 80px;
+  max-width: 320px;
+}
+
+.header__wrapper .header_menu {
+  display: flex;
+  column-gap: 15px;
+}
+
+.header_menu li>a {
+  color: var(--color-white);
+  transition: color .3s ease;
+}
+
+.header__wrapper .header_menu li>a:hover {
+  display: block;
+  color: var(--color-orange);
+}
+
+@media (min-width:767.8px)  {
+  .header__wrapper .logo {
+    width: 100%;
+    overflow: hidden;
+    transform: scale(1);
+  }
+
+  .header__wrapper .mobile {
+    display: none;
+  }
+
+  .header__wrapper .desktop {
+    display: block;
+  }
+
+}
+
+@media (min-width:1200px) {
+
+}
