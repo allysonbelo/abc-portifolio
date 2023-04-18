@@ -1,0 +1,7 @@
+.banner{
+    width: 100%;
+    display: flex;
+    column-gap: 15px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
