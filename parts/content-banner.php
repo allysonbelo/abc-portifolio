@@ -1,10 +1,10 @@
 <section class="wrapper">
     <div class="banner">
         <div class="banner__social">
-            Social3
+            Social4
         </div>
         <div class="banner__wrapper">
-            Content3
+            Content4
         </div>
     </div>
 </section>
