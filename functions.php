@@ -3,7 +3,7 @@
 function abcdev_load_scripts()
 {
     //Styles - Start
-    wp_enqueue_style('abcdev-reset', get_template_directory_uri() . '/styles/reset.css', array(), '1.0', 'all');
+    wp_enqueue_style('abcdev-reset', get_template_directory_uri() . '/styles/reset.css', array(), filemtime(get_template_directory() . '/styles/reset.css'), 'all');
     wp_enqueue_style('abcdev-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), 'all');
     wp_enqueue_style('abcdev-header', get_template_directory_uri() . '/styles/header.css', array(), filemtime(get_template_directory() . '/styles/header.css'), 'all');
     wp_enqueue_style('abcdev-base', get_template_directory_uri() . '/styles/base.css', array(), filemtime(get_template_directory() . '/styles/base.css'), 'all');
