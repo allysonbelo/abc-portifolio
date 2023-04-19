@@ -67,3 +67,10 @@ function add_web_share_api()
     wp_enqueue_script('web-share-api', 'https://cdn.jsdelivr.net/npm/@web-apis/share@1.0.0/dist/web-share-api.min.js', array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'add_web_share_api');
+
+//DashIcons
+function wpdocs_theme_name_scripts() {
+    wp_enqueue_style( 'dashicons' );
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
+
