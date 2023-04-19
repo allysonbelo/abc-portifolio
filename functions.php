@@ -7,7 +7,8 @@ function abcdev_load_scripts()
     wp_enqueue_style('abcdev-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), 'all');
     wp_enqueue_style('abcdev-header', get_template_directory_uri() . '/styles/header.css', array(), filemtime(get_template_directory() . '/styles/header.css'), 'all');
     wp_enqueue_style('abcdev-base', get_template_directory_uri() . '/styles/base.css', array(), filemtime(get_template_directory() . '/styles/base.css'), 'all');
-    wp_enqueue_style('abcdev-part-banner', get_template_directory_uri() . '/styles/part-banner.css', array(), filemtime(get_template_directory() . '/styles/part-banner.css'), 'all');
+    wp_enqueue_style('abcdev-content-hero', get_template_directory_uri() . '/styles/content-hero.css', array(), filemtime(get_template_directory() . '/styles/content-hero.css'), 'all');
+    wp_enqueue_style('abcdev-dark-mode', get_template_directory_uri() . '/styles/dark-mode.css', array(), filemtime(get_template_directory() . '/styles/dark-mode.css'), 'all');
     //Styles - End
 
     //Font - Start
@@ -16,6 +17,7 @@ function abcdev_load_scripts()
 
     //Javascript - Start
     wp_enqueue_script('dropdwon', get_template_directory_uri() . './js/dropdown.js', array(), '1.0', true);
+    wp_enqueue_script('dark-mode', get_template_directory_uri() . '/js/dark-mode.js', array(), '1.0', true);
     //Javascript - End
 }
 add_action('wp_enqueue_scripts', 'abcdev_load_scripts');
