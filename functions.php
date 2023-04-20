@@ -18,6 +18,7 @@ function abcdev_load_scripts()
     //Javascript - Start
     wp_enqueue_script('dropdwon', get_template_directory_uri() . './js/dropdown.js', array(), '1.0', true);
     wp_enqueue_script('dark-mode', get_template_directory_uri() . '/js/dark-mode.js', array(), '1.0', true);
+    wp_enqueue_script('link-share', get_template_directory_uri() . '/js/link-share.js', array(), '1.0', true);
     //Javascript - End
 }
 add_action('wp_enqueue_scripts', 'abcdev_load_scripts');
@@ -73,4 +74,3 @@ function wpdocs_theme_name_scripts() {
     wp_enqueue_style( 'dashicons' );
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
-
