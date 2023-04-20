@@ -11,16 +11,3 @@
         </div>
     </div>
 </section>
-
-<script>
-    //Link de compartilhamento
-    const shareButton = document.querySelector('#share-button');
-    shareButton.addEventListener('click', () => {
-        navigator.share({
-                title: document.title,
-                url: window.location.href
-            })
-            .then(() => console.log('Shared successfully'))
-            .catch(error => console.log('Error sharing:', error));
-    });
-</script>
