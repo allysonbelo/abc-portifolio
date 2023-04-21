@@ -16,7 +16,6 @@
     flex-direction: column;
     color: var(--color-white);
     row-gap: 15px;
-    /* width: 40px; */
 }
 
 .hero__social::before{
@@ -42,7 +41,7 @@
     height: 100%;
     transition: scale .2s;
 
-    font-size: clamp(20px, 4vw, 28px);
+    font-size: clamp(24px, 4vw, 28px);
 }
 
 .hero__social a:hover, .hero__social span:hover{
