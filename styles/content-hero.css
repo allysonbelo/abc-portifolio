@@ -7,13 +7,16 @@
 }
 
 .hero__social{
+    position: fixed;
+    left: 19px;
+    top: min(10rem, 32%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     color: var(--color-white);
     row-gap: 15px;
-    width: 40px;
+    /* width: 40px; */
 }
 
 .hero__social::before{
@@ -21,7 +24,6 @@
     background-color: var(--color-orange);
     width: 2px;
     height: 150px;
-    margin-top: -30px;
 }
 
 .hero__social::after{
@@ -31,7 +33,7 @@
     height: 150px;
 }
 
-.hero__social a{
+.hero__social a, .hero__social span{
     color: var(--color-white);
     font-size: 28px;
     margin: 0;
@@ -39,11 +41,14 @@
     width: 100%;
     height: 100%;
     transition: scale .2s;
+
+    font-size: clamp(20px, 4vw, 28px);
 }
 
-.hero__social a:hover{
+.hero__social a:hover, .hero__social span:hover{
     color: var(--color-orange);
     scale: 1.2;
+    cursor: pointer;
 }
 
   

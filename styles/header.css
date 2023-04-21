@@ -3,7 +3,7 @@ html, body {
 }
 
 .header {
-  height: 120px;
+  height: 90px;
   width: 100%;
   /* max-width: 1200px; */
   color: var(--color-white);
@@ -11,6 +11,7 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .btn_dropdown {
@@ -104,16 +105,17 @@ html, body {
 }
 
 .header__wrapper .logo {
-  width: 80px;
+  width: clamp(50px, 8vw, 57px);
   overflow: hidden;
   animation: teste 2s 1s forwards;
-  transform: scale(.6);
+  /* transform: scale(.6); */
 }
 
 
 .header__wrapper .logo img {
   max-height: 80px;
-  max-width: 320px;
+  width: clamp(180px, 31vw, 280px);
+  object-fit: contain;
 }
 
 .header__wrapper .header_menu {
@@ -124,6 +126,7 @@ html, body {
 .header_menu li>a {
   color: var(--color-white);
   transition: color .3s ease;
+  font-size: clamp(14px, 4vw, 16px);
 }
 
 .header__wrapper .header_menu li>a:hover {

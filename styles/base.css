@@ -22,7 +22,7 @@ html {
 .wrapper{
   max-width: 1200px;
   width: 100%;
-  padding: 20px;
+  padding: 10px 20px 0px 20px;
 }
 
 /* font-family: 'Montserrat', sans-serif;

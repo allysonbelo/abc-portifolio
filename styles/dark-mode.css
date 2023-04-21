@@ -7,20 +7,20 @@
     font-size: 16px;
 }
 
-body.light-mode {
+.light-mode {
     background-color: #b1b1b1c9;
     color: #333;
 }
 
-body.light-mode #theme-toggle {
+.light-mode #theme-toggle {
     background-color: #ffffffbd;
     color: #333;
 }
 
-body.light-mode .hero__social a {
-    color: var(--color-orange);
+.light-mode .hero__social a {
+    color: green;
 }
 
-body.light-mode .header_menu li>a {
-    color: var(--color-orange);
+.light-mode .header_menu li>a {
+    color: purple;
 }

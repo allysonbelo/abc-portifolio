@@ -16,7 +16,7 @@ function abcdev_load_scripts()
     //Font - End
 
     //Javascript - Start
-    wp_enqueue_script('dropdwon', get_template_directory_uri() . './js/dropdown.js', array(), '1.0', true);
+    wp_enqueue_script('dropdwon', get_template_directory_uri() . '/js/dropdown.js', array(), '1.0', true);
     wp_enqueue_script('dark-mode', get_template_directory_uri() . '/js/dark-mode.js', array(), '1.0', true);
     wp_enqueue_script('link-share', get_template_directory_uri() . '/js/link-share.js', array(), '1.0', true);
     //Javascript - End
