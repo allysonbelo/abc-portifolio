@@ -61,15 +61,11 @@ html, body {
 }
 
 .menu-mobile {
-  right: -999px;
   top: 30px;
-  position: absolute;
-  transition: right .3s;
+  position: relative;
 }
 
 .menu-mobile.active {
-  position: absolute;
-  right: 90px;
   top: 30px;
 }
 
@@ -79,11 +75,23 @@ html, body {
   flex-direction: column;
   position: absolute;
   align-items: flex-end;
-  background-color: red;
-  padding-top: 20px;
+  /* width: 100vw; */
   padding-bottom: 20px;
-  padding-left: 10px;
-  padding-right: 10px;
+  right: 999px;
+  z-index: 999;
+  transition: right .3s;
+
+  background-color: var(--color-orange); /* Define uma cor de fundo com transparência */
+  border-radius: 10px; /* Especifica um raio de borda para suavizar as bordas do cartão */
+  padding: 20px; /* Adiciona algum preenchimento interno para o conteúdo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave para separar o cartão do fundo */
+
+  width: 100vw;
+
+}
+
+.menu-mobile.active ul {
+  right: 0;
 }
 
 .menu-mobile ul li{
