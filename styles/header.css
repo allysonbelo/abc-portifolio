@@ -135,6 +135,7 @@ html, body {
   color: var(--color-white);
   transition: color .3s ease;
   font-size: clamp(14px, 4vw, 16px);
+  font-family: 'Montserrat', serif;
 }
 
 .header__wrapper .header_menu li>a:hover {
@@ -145,7 +146,7 @@ html, body {
 /* Social  */
 .header__social{
   position: fixed;
-  top: min(10rem, 32%);
+  top: min(8rem, 36%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,8 +177,18 @@ html, body {
   width: 100%;
   height: 100%;
   transition: scale .2s;
-
   font-size: clamp(24px, 4vw, 28px);
+}
+
+.header__social--git{
+  display: flex;
+  place-content: center;
+}
+
+.header__social--git svg{
+  height: 28px;
+  width: 28px;
+  fill: white;
 }
 
 .header__social a:hover, .header__social span:hover{
@@ -206,4 +217,13 @@ html, body {
 
 @media (min-width:1200px) {
 
+}
+
+
+
+
+
+.grid-teste{
+  display: grid;
+  grid-template-rows: 80px 1fr 120px;
 }

@@ -1,5 +1,7 @@
 <?php
 
+require get_template_directory() . '/inc/customizer.php';
+
 function abcdev_load_scripts()
 {
     //Styles - Start
