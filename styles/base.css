@@ -8,6 +8,11 @@
 
 html {
   background-color: var(--color-bg-black);
+  font-family: 'Montserrat';
+}
+
+*::selection{
+  background-color: var(--color-orange);
 }
 
 .full-wrapper {
@@ -16,7 +21,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
 }
 
 .wrapper{
