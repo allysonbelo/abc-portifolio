@@ -35,5 +35,11 @@
                         <?php wp_nav_menu(array('theme_location' => 'wp_abcdev_header_menu', 'depth' => 1, 'menu_class' => 'header_menu')) ?>
                     </nav>
                 </div>
+                <div class="hero__social">
+                    <a href="#" class="dashicons dashicons-linkedin"></a>
+                    <a href="#" class="dashicons dashicons-instagram"></a>
+                    <!-- <a href="#" class="dashicons dashicons-whatsapp"></a> -->
+                    <span id="share-button" class="dashicons dashicons-admin-links"></span>
+                </div>
             </header>
         </div>
