@@ -71,13 +71,18 @@
     box-shadow: 4px 4px 4px 0px var(--color-orange);
 }
 
-.hero__bg{
+.hero__bg {
     position: absolute;
     right: 0;
     height: 100%;
     width: 65%;
     z-index: -1;
+    box-shadow: inset 0px 0px 1em 24px #36373C;
+    display: none;
+}
 
-    box-shadow: inset 24px 21px 50px 28px #36373C;
-filter: blur(2.5px);
+@media (min-width:767.8px)  {
+    .hero__bg {
+        display: block;
+    }
 }
