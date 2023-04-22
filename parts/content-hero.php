@@ -1,5 +1,5 @@
-<section class="wrapper">
-    <div class="hero">
+<div class="wrapper">
+    <section class="hero">
         <div class="hero__content">
             <!-- <span id="theme-toggle">Tema</span> -->
             <h1 class="hero__content--title">Allyson Belo Cavalcante</h1>
@@ -12,5 +12,5 @@
         ?>
         <div class="hero__bg" style="background: #36373c url( '<?php echo $hero_background ?>' ) no-repeat center center / cover;">
         </div>
-    </div>
-</section>
+    </section>
+</div>

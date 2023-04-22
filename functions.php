@@ -11,6 +11,8 @@ function abcdev_load_scripts()
     wp_enqueue_style('abcdev-base', get_template_directory_uri() . '/styles/base.css', array(), filemtime(get_template_directory() . '/styles/base.css'), 'all');
     wp_enqueue_style('abcdev-content-hero', get_template_directory_uri() . '/styles/content-hero.css', array(), filemtime(get_template_directory() . '/styles/content-hero.css'), 'all');
     wp_enqueue_style('abcdev-dark-mode', get_template_directory_uri() . '/styles/dark-mode.css', array(), filemtime(get_template_directory() . '/styles/dark-mode.css'), 'all');
+    wp_enqueue_style('abcdev-social', get_template_directory_uri() . '/styles/social.css', array(), filemtime(get_template_directory() . '/styles/social.css'), 'all');
+    wp_enqueue_style('abcdev-footer', get_template_directory_uri() . '/styles/footer.css', array(), filemtime(get_template_directory() . '/styles/footer.css'), 'all');
     //Styles - End
 
     //Font - Start
