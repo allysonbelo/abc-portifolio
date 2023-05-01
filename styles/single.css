@@ -1,0 +1,126 @@
+.post__container {
+    padding-top: 20px;
+}
+
+.post__content--wrapper {
+    display: grid;
+    grid-template-areas:
+        "image"
+        "conteudo"
+        "links-preview"
+        "tecnologies";
+    row-gap: 30px;
+    align-items: center;
+}
+
+.post__content--image {
+    grid-area: image;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.post__content--image img {
+    box-shadow: 0px 0px 6px 3px black;
+    border-radius: 17px;
+    width: 100%;
+    height: auto;
+}
+
+.post__content--project {
+    grid-area: conteudo;
+}
+
+.post__content--project .post__content--title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(35px, 5vw, 65px);
+    color: var(--color-white);
+    line-height: 119.03%;
+
+    border-bottom: 3px solid #E8541D;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.post__content--content {
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 3.4vw, 20px);
+    line-height: 130.53%;
+    color: var(--color-white);
+}
+
+.post__content--tecnologies {
+    grid-area: links-preview;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post__content--tecnologies a {
+    color: var(--color-white);
+}
+
+.tecnologies__title {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.tecnologies__title span {
+    color: var(--color-orange);
+    width: 30px;
+    font-weight: 400;
+}
+
+.tecnologies a svg {
+    fill: var(--color-white);
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-orange);
+    border-radius: 50px;
+    padding: 5px;
+    transition: box-shadow .2s;
+}
+
+.tecnologies a svg:hover {
+    box-shadow: inset 0px 0px 6px 3px #202020, 2px 1px 0px 2px #202020;
+}
+
+.tecnologies>a>svg g,
+.tecnologies>a>svg path {
+    transition: transform .2s;
+}
+
+.tecnologies>a>svg:hover>g,
+.tecnologies>a>svg:hover>path {
+    transform: translate(-2px);
+}
+
+.tecnologies > a > .php:hover > path{
+    transform: translate(-100px);
+}
+
+.tecnologies > a > .wordpress:hover > g > path{
+    transform: translate(-10px);
+}
+
+@media (min-width:767.8px) {
+    .post__container {
+        margin-left: clamp(11px, 3.5vw, 45px);
+        padding-left: 40px;
+        padding-top: 40px;
+    }
+
+    .post__content--wrapper {
+        grid-template-areas:
+            "image conteudo"
+            "links-preview tecnologies";
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        align-items: flex-start;
+    }
+}

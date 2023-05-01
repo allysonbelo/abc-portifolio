@@ -8,7 +8,8 @@
 
 html {
   background-color: var(--color-bg-black);
-  font-family: 'Montserrat';
+  /* font-family: 'Montserrat'; */
+  font-family: 'Poppins';
 }
 
 *::selection{

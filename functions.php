@@ -11,6 +11,7 @@ function abcdev_load_scripts()
     wp_enqueue_style('abcdev-base', get_template_directory_uri() . '/styles/base.css', array(), filemtime(get_template_directory() . '/styles/base.css'), 'all');
     wp_enqueue_style('abcdev-content-hero', get_template_directory_uri() . '/styles/content-hero.css', array(), filemtime(get_template_directory() . '/styles/content-hero.css'), 'all');
     wp_enqueue_style('abcdev-dark-mode', get_template_directory_uri() . '/styles/dark-mode.css', array(), filemtime(get_template_directory() . '/styles/dark-mode.css'), 'all');
+    wp_enqueue_style('abcdev-single', get_template_directory_uri() . '/styles/single.css', array(), filemtime(get_template_directory() . '/styles/single.css'), 'all');
     wp_enqueue_style('abcdev-social', get_template_directory_uri() . '/styles/social.css', array(), filemtime(get_template_directory() . '/styles/social.css'), 'all');
     wp_enqueue_style('abcdev-footer', get_template_directory_uri() . '/styles/footer.css', array(), filemtime(get_template_directory() . '/styles/footer.css'), 'all');
     //Styles - End
@@ -55,6 +56,11 @@ function abcdev_config()
             'wp_abcdev_footer_menu' => 'Footer Menu'
         )
     );
+
+    add_theme_support( 'post-thumbnails' );
+    // add_theme_support( 'custom-background' );
+    add_theme_support( 'title-tag' );
+
 }
 add_action('after_setup_theme', 'abcdev_config', 0);
 
@@ -78,3 +84,6 @@ function wpdocs_theme_name_scripts() {
     wp_enqueue_style( 'dashicons' );
 }
 add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
+
+// Inclui o arquivo axu.php apenas uma vez
+require_once get_template_directory() . '/custom_fields.php';
