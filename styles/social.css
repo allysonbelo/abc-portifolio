@@ -1,3 +1,7 @@
+body > div.full-wrapper > div:nth-child(1) > div{
+    display: none;
+}
+
 .social {
     position: fixed;
     top: min(8rem, 36%);
@@ -55,4 +59,10 @@
     color: var(--color-orange);
     scale: 1.2;
     cursor: pointer;
+}
+
+@media (min-width:767.8px)  {
+    body > div.full-wrapper > div:nth-child(1) > div{
+        display: flex;
+    }
 }
