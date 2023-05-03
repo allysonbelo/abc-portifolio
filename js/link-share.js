@@ -7,7 +7,7 @@ function share() {
         .then(() => console.log('Shared successfully'))
         .catch(error => console.log('Error sharing:', error));
     } else {
-      // fallback to other share methods
+      alert('Desculpe, essa é uma função nova disponivel apenas em navegadores mais modernos. ')
     }
   }
   
