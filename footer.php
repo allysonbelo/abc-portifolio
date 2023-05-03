@@ -8,7 +8,7 @@
                     <a href="<?= home_url('page-home') ?>"><span><?= bloginfo('name'); ?></span></a>
                 <?php endif; ?>
             </div>
-            <?php get_template_part('/parts/content', 'social'); ?>
+            <?php get_template_part('parts/content', 'social'); ?>
         </div>
         <nav>
             <?php wp_nav_menu(array('theme_location' => 'wp_abcdev_footer_menu', 'depth' => 1, 'menu_class' => 'footer__menu')) ?>
