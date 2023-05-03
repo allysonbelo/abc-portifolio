@@ -1,4 +1,4 @@
-body > div.full-wrapper > div:nth-child(1) > div{
+.wrapper > .social{
     display: none;
 }
 

@@ -10,5 +10,5 @@
         </svg>
     </a>
     <!-- <a href="#" class="dashicons dashicons-whatsapp"></a> -->
-    <span id="share-button" class="dashicons dashicons-admin-links"></span>
+    <span id="share-button" onclick="share()" class="dashicons dashicons-admin-links"></span>
 </div>
