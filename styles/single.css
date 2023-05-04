@@ -7,10 +7,22 @@
     grid-template-areas:
         "image"
         "conteudo"
+        "conteudo2"
         "links-preview"
         "tecnologies";
     row-gap: 30px;
     align-items: center;
+}
+
+.conteudo2{
+    grid-area: conteudo2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(16px, 3.4vw, 20px);
+    line-height: 130.53%;
+    color: var(--color-white);
+    display: grid;
+    gap: 20px;
 }
 
 .post__content--image {
@@ -124,9 +136,11 @@
     .post__content--wrapper {
         grid-template-areas:
             "image conteudo"
+            "conteudo2 conteudo2"
             "links-preview tecnologies";
         grid-template-columns: 1fr 1fr;
         column-gap: 20px;
+        row-gap: 70px;
         align-items: flex-start;
     }
 }
