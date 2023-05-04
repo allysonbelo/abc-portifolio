@@ -9,7 +9,7 @@
         "conteudo"
         "links-preview"
         "tecnologies";
-    row-gap: 45px;
+    row-gap: 30px;
     align-items: center;
 }
 
@@ -55,17 +55,15 @@
 .post__content--tecnologies {
     grid-area: links-preview;
     display: flex;
-    flex-direction: column;
     gap: 20px;
     flex-wrap: wrap;
-    flex-direction: row;
 }
 
 .post__content--tecnologies a {
     color: var(--color-white);
 }
 
-.post__container .tecnologies{
+.tecnologies{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -98,21 +96,21 @@
     box-shadow: inset 0px 0px 6px 3px #202020, 2px 1px 0px 2px #202020;
 }
 
-.tecnologies>a>svg g,
-.tecnologies>a>svg path {
+.tecnologies>div>a>svg path,
+.tecnologies>div>a>svg g {
     transition: transform .2s;
 }
 
-.tecnologies>a>svg:hover>g,
-.tecnologies>a>svg:hover>path {
+.tecnologies>div>a>svg:hover>g,
+.tecnologies>div>a>svg:hover>path {
     transform: translate(-2px);
 }
 
-.tecnologies > a > .php:hover > path{
+.tecnologies>div>a>.php:hover>path {
     transform: translate(-100px);
 }
 
-.tecnologies > a > .wordpress:hover > g > path{
+.tecnologies>div>a>.wordpress:hover>g>path {
     transform: translate(-10px);
 }
 
