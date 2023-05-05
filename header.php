@@ -27,11 +27,19 @@
                             <div class="line line3"></div>
                         </div>
                         <div class="menu-mobile">
-                            <?php wp_nav_menu(array('theme_location' => 'wp_abcdev_header_menu', 'depth' => 1, 'menu_class' => 'header_menu')) ?>
+                            <?php wp_nav_menu(array(
+                                'theme_location' => 'wp_abcdev_header_menu',
+                                'depth' => 1, 'menu_class' => 'header_menu',
+                                'echo' => true,
+                            )) ?>
                         </div>
                     </nav>
                     <nav class="desktop">
-                        <?php wp_nav_menu(array('theme_location' => 'wp_abcdev_header_menu', 'depth' => 1, 'menu_class' => 'header_menu')) ?>
+                        <?php wp_nav_menu(array(
+                            'theme_location' => 'wp_abcdev_header_menu',
+                            'depth' => 1, 'menu_class' => 'header_menu',
+                            'echo' => true,
+                        )) ?>
                     </nav>
                 </div>
 

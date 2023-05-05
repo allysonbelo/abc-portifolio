@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   cursor: default !important;
 }
 
@@ -24,7 +25,7 @@ html, body {
   position: relative;
 }
 
-.btn_dropdown{
+.btn_dropdown {
   cursor: pointer;
   width: 20px;
   height: 20px;
@@ -81,10 +82,14 @@ html, body {
   z-index: 999;
   transition: right .3s;
 
-  background-color: var(--color-orange); /* Define uma cor de fundo com transparência */
-  border-radius: 10px; /* Especifica um raio de borda para suavizar as bordas do cartão */
-  padding: 20px; /* Adiciona algum preenchimento interno para o conteúdo */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra suave para separar o cartão do fundo */
+  background-color: var(--color-orange);
+  /* Define uma cor de fundo com transparência */
+  border-radius: 10px;
+  /* Especifica um raio de borda para suavizar as bordas do cartão */
+  padding: 20px;
+  /* Adiciona algum preenchimento interno para o conteúdo */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* Adiciona uma sombra suave para separar o cartão do fundo */
 
   width: 100vw;
 
@@ -94,7 +99,7 @@ html, body {
   right: 0;
 }
 
-.menu-mobile ul li{
+.menu-mobile ul li {
   margin-right: 10px;
 }
 
@@ -139,11 +144,10 @@ html, body {
 }
 
 .header__wrapper .header_menu li>a:hover {
-  display: block;
   color: var(--color-orange);
 }
 
-@media (min-width:767.8px)  {
+@media (min-width:767.8px) {
   .header__wrapper .logo {
     width: 100%;
     overflow: hidden;
@@ -158,8 +162,11 @@ html, body {
     display: block;
   }
 
+  .header__wrapper .desktop .current-menu-item>a {
+    color: var(--color-orange);
+    border-bottom: 2px solid var(--color-orange);
+  }
+
 }
 
-@media (min-width:1200px) {
-
-}
+@media (min-width:1200px) {}
