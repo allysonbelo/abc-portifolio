@@ -31,7 +31,6 @@
     box-shadow: 0px 0px 6px 3px black;
     border-radius: 17px;
     height: auto;
-    max-width: clamp(350px, 3vw, 450px);
     width: 100%;
 }
 
@@ -60,5 +59,13 @@
     .blog__article {
         display: flex;
         flex-direction: row;
+    }
+
+    .blog__article--thumbnail img {
+        box-shadow: 0px 0px 6px 3px black;
+        border-radius: 17px;
+        height: auto;
+        max-width: clamp(350px, 3vw, 450px);
+        width: 100%;
     }
 }
