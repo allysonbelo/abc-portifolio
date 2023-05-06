@@ -10,6 +10,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    margin-bottom: 40px;
 }
 
 footer .logo {
@@ -61,6 +62,11 @@ footer nav .footer__menu a {
 }
 
 @media (min-width:767.8px) {
+
+    .footer__content {
+        padding-top: 20px;
+    }
+
     footer .logo {
         width: 100%;
         overflow: hidden;
