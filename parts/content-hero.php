@@ -14,7 +14,14 @@
             <h1 class="hero__content--title"><?php echo $title; ?></h1>
             <span class="hero__content--vocation"><?php echo $profession; ?></span>
             <p class="hero__content--text"><?php echo $paragraph; ?></p>
-            <a href="<?php echo $link_button ?>" class="hero__content--button" target="_blank"><?php echo $text_button; ?></a>
+            <?php if (!is_home()) {
+            ?>
+                <a href="<?php echo $link_button ?>" class="hero__content--button" target="_blank"><?php echo $text_button; ?></a>
+            <?php
+            }
+
+            ?>
+
         </div>
         <div class="hero__bg" style="background: #36373c url( '<?php echo $hero_background ?>' ) no-repeat center center / cover;">
         </div>
