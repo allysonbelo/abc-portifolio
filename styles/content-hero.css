@@ -2,7 +2,6 @@
     display: flex;
     place-items: center;
     margin-top: clamp(20px, 4vw, 56px);
-    margin-left: clamp(11px, 3.5vw, 45px);
     position: relative;
     min-height: 0vh;
 }
@@ -81,12 +80,17 @@
     display: none;
 }
 
-@media (min-width:767.8px)  {
+@media (min-width:767.8px) {
+    .hero {
+        margin-left: clamp(11px, 3.5vw, 45px);
+    }
+
     .hero__bg {
         display: block;
     }
 
     .hero__content {
         padding-left: 40px;
+        min-height: 366.52px
     }
 }

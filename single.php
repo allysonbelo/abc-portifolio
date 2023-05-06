@@ -13,8 +13,11 @@
                 <div class="post__content--project">
                     <h1 class="post__content--title"><?php the_title(); ?></h1>
                     <div class="post__content--content">
-                        <?php the_content(); ?>
+                        <?php the_excerpt(); ?>
                     </div>
+                </div>
+                <div class="conteudo2">
+                    <?php the_content(); ?>
                 </div>
                 <div class="post__content--tecnologies">
                     <h2 class="tecnologies__title"> <span> &lt </span> Código fonte <span> /&gt </span> </h2>
