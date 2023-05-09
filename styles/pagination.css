@@ -1,0 +1,41 @@
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.pagination .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination .nav-links a {
+    color: var(--color-white);
+}
+
+.pagination .nav-links .current {
+    color: var(--color-orange);
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.pagination .nav-links .dashicons {
+    animation: pulsar 2s infinite;
+}
+
+@keyframes pulsar {
+    0% {
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}

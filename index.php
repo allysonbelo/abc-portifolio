@@ -2,7 +2,7 @@
 <?php get_template_part('parts/content', 'hero'); ?>
 <main class="wrapper">
     <div class="blog__container">
-        <h2 class="blog__container--title">My Projects</h2>
+        <h2 class="blog__container--title">Blog</h2>
         <div class="blog__container--posts">
             <?php if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
@@ -42,6 +42,7 @@
                 <p>Nothing yet to be displayed!</p>
             <?php endif; ?>
         </div>
+        <?php get_template_part('parts/content', 'pagination');; ?>
     </div>
 </main>
 <?php get_footer(); ?>
