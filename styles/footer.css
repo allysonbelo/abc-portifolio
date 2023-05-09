@@ -53,6 +53,10 @@ footer nav .footer__menu a {
     font-family: 'Montserrat', serif;
 }
 
+.footer__menu li a:hover{
+    color: var(--color-orange);
+}
+
 .footer__copy {
     font-style: normal;
     font-weight: 400;

@@ -1,14 +1,9 @@
 .blog__container {
     padding-top: 40px;
-
-    display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-
     width: 100%;
 }
 
-.blog__container--title{
+.blog__container--title {
     font-style: normal;
     font-weight: 400;
     font-size: clamp(35px, 4vw, 50px);
@@ -16,7 +11,13 @@
     line-height: 119.03%;
     border-bottom: 3px solid #E8541D;
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 60px;
+}
+
+.blog__container--posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
 }
 
 .blog__article {
@@ -30,8 +31,9 @@
 .blog__article--thumbnail img {
     box-shadow: 0px 0px 6px 3px black;
     border-radius: 17px;
-    height: auto;
     width: 100%;
+    object-fit: cover;
+    height: clamp(245px, 55vw, 388px);
 }
 
 .blog__article--content {
@@ -41,12 +43,38 @@
 
 }
 
-.blog__article--content .blog__article--title a{
+.blog__article--content .blog__article--title a {
     color: var(--color-white);
     display: flex;
     align-items: center;
     column-gap: 10px;
     font-size: clamp(1rem, 2.5vw, 1.225rem);
+}
+
+.meta__info .meta__info--p {
+    color: var(--color-white);
+}
+
+.meta__info .meta__info--p a {
+    color: var(--color-orange);
+    transition: .1s ease-in-out;
+}
+
+.meta__info .meta__info--p a:hover {
+    color: var(--color-orange);
+    opacity: .5;
+}
+
+@media (min-width:767.8px) and (max-width: 970px) {
+    .blog__container--posts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:970px) {
+    .blog__container--posts {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (min-width:767.8px) {
@@ -56,16 +84,17 @@
         padding-left: 40px;
     }
 
-    .blog__article {
-        display: flex;
-        flex-direction: row;
-    }
-
     .blog__article--thumbnail img {
         box-shadow: 0px 0px 6px 3px black;
         border-radius: 17px;
-        height: auto;
-        max-width: clamp(350px, 3vw, 450px);
+        height: 246px;
         width: 100%;
+        object-fit: cover;
+    }
+
+    .default-thumbnail {
+        width: 100%;
+        min-height: clamp(185px, 19vw, 246px);
+        object-fit: cover;
     }
 }
