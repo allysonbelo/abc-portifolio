@@ -16,7 +16,9 @@
                                 </a>
                             <?php else : ?>
                                 <!-- Caso contrário, exiba a imagem padrão -->
-                                <img class="default-thumbnail" src="<?php echo get_template_directory_uri(); ?>/img/thumbnail-default.jpg" alt="Imagem padrão">
+                                <a href="<?php the_permalink() ?>">
+                                    <img class="default-thumbnail" src="<?php echo get_template_directory_uri(); ?>/img/thumbnail-default.jpg" alt="Imagem padrão">
+                                </a>
                             <?php endif; ?>
 
                         </div>

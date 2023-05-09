@@ -33,7 +33,7 @@
     border-radius: 17px;
     width: 100%;
     object-fit: cover;
-    height: auto;
+    height: clamp(245px, 55vw, 388px);
 }
 
 .blog__article--content {
