@@ -2,10 +2,10 @@
 <?php get_template_part('parts/content', 'hero'); ?>
 <main class="wrapper">
     <div class="blog__container">
-        <h2 class="blog__container--title">Blog</h2>
+        <h2 class="blog__container--title">Meus projetos</h2>
         <div class="blog__container--posts">
             <?php
-            $projeto = get_category_by_slug('blog');
+            $projeto = get_category_by_slug('projeto');
             $args = array(
                 'post_type' => 'post',
                 'posts_per_page' => 9,
