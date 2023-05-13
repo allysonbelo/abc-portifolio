@@ -4,7 +4,7 @@
 
 .social {
     position: fixed;
-    top: min(14.2rem, 36%);
+    top: min(18.2rem, 36%);
     display: flex;
     align-items: center;
     justify-content: center;

@@ -21,14 +21,33 @@
             }
 
             ?>
-            <div class="hero__content--arrows">
+            <a href="#anchor" class="hero__content--arrows">
                 <span class="dashicons dashicons-arrow-down-alt2 hero__content--arrow"></span>
                 <span class="dashicons dashicons-arrow-down-alt2 hero__content--arrow"></span>
                 <span class="dashicons dashicons-arrow-down-alt2 hero__content--arrow"></span>
-            </div>
+            </a>
         </div>
         <div class="hero__bg">
             <img src="<?php echo $hero_background ?>" alt="">
         </div>
     </section>
 </div>
+
+<!-- <script>
+    const arrowDiv = document.querySelector('.hero__content--arrows');
+    let scrollAmount;
+
+    //Verifica se é mobile ou desktop
+    if (window.innerWidth <= 768) {
+        scrollAmount = 700;
+    } else {
+        scrollAmount = 1050;
+    }
+
+    arrowDiv.addEventListener('click', () => {
+        window.scrollBy({
+            top: scrollAmount,
+            behavior: 'smooth'
+        });
+    });
+</script> -->

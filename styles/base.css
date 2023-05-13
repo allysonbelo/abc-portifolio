@@ -11,6 +11,7 @@ html {
   background-color: rgb(13 25 37);
   /* font-family: 'Montserrat'; */
   font-family: 'Poppins';
+  scroll-behavior: smooth;
 }
 
 *::selection{
