@@ -9,6 +9,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+
+    <?php if (get_option('_popup_checkbox') === 'yes') {
+        get_template_part('parts/content', 'popup');
+    }
+    ?>
+
     <div class="full-wrapper">
         <div class="wrapper">
             <header class="header">
