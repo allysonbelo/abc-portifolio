@@ -21,9 +21,14 @@
             }
 
             ?>
-
+            <div class="hero__content--arrows">
+                <span class="dashicons dashicons-arrow-down-alt2 hero__content--arrow"></span>
+                <span class="dashicons dashicons-arrow-down-alt2 hero__content--arrow"></span>
+                <span class="dashicons dashicons-arrow-down-alt2 hero__content--arrow"></span>
+            </div>
         </div>
-        <div class="hero__bg" style="background: #36373c url( '<?php echo $hero_background ?>' ) no-repeat center center / cover;">
+        <div class="hero__bg">
+            <img src="<?php echo $hero_background ?>" alt="">
         </div>
     </section>
 </div>

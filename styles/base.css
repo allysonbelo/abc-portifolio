@@ -7,7 +7,8 @@
 }
 
 html {
-  background-color: var(--color-bg-black);
+  /* background-color: var(--color-bg-black); */
+  background-color: rgb(13 25 37);
   /* font-family: 'Montserrat'; */
   font-family: 'Poppins';
 }
