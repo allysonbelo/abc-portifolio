@@ -10,7 +10,10 @@
 
 <body <?php body_class(); ?>>
 
-<?php get_template_part('parts/content', 'popup'); ?>
+    <?php if (get_option('_popup_checkbox') === 'yes') {
+        get_template_part('parts/content', 'popup');
+    }
+    ?>
 
     <div class="full-wrapper">
         <div class="wrapper">

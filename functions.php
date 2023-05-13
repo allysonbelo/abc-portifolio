@@ -89,3 +89,44 @@ add_action( 'wp_enqueue_scripts', 'wpdocs_theme_name_scripts' );
 
 // Inclui o arquivo axu.php apenas uma vez
 require_once get_template_directory() . '/custom_fields.php';
+
+//Adiciona um submenu no menu aparenccia para habilitar/desabilitar um popup de site em desenvolvimento - Inicio
+add_action('admin_menu', 'popup_settings_page');
+function popup_settings_page() {
+    add_submenu_page(
+        'themes.php', // or 'plugins.php' for plugins
+        __('Popup Settings', 'textdomain'),
+        __('Popup Settings', 'textdomain'),
+        'manage_options',
+        'popup-settings-id',
+        'popup_settings_callback'
+    );
+}
+
+function popup_settings_callback() {
+    ?>
+    <div class="wrap">
+        <h1><?php _e( 'Popup Settings', 'textdomain' ); ?></h1>
+        <form method="POST" action="options.php">
+            <?php 
+                settings_fields( 'popup_settings_group' );
+                $value = get_option( '_popup_checkbox' );
+                echo '<label for="popup-checkbox">';
+                echo '<input type="checkbox" id="popup-checkbox" name="_popup_checkbox" value="yes" '. checked( $value, 'yes', false ) .' />';
+                echo __('Show Popup Content', 'textdomain');
+                echo '</label>';
+                submit_button();
+            ?>
+        </form>
+    </div>
+    <?php
+}
+
+add_action( 'admin_init', 'register_popup_settings' );
+function register_popup_settings() {
+    register_setting(
+        'popup_settings_group',
+        '_popup_checkbox'
+    );
+}
+//Adiciona um submenu no menu aparenccia para habilitar/desabilitar um popup de site em desenvolvimento - Fim
