@@ -32,7 +32,8 @@
     }
 
     .popup__wrapper {
-        width: 30%;
+        width: 100%;
+        max-width: 500px;
         height: 30%;
         border-radius: 10px;
         padding: 20px;
@@ -79,24 +80,22 @@
 </script> -->
 
 <script>
-     function createConfetti() {
-     const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#cddc39', '#ffeb3b', '#ffc107', '#ff9800', '#ff5722'];
-     const tamanho = [0, 10];
+    function createConfetti() {
+        const colors = ['#f44336', '#e91e63', '#9c27b0', '#673ab7', '#3f51b5', '#2196f3', '#03a9f4', '#00bcd4', '#009688', '#4caf50', '#8bc34a', '#cddc39', '#ffeb3b', '#ffc107', '#ff9800', '#ff5722'];
+        const tamanho = [0, 10];
 
-     for (let i = 0; i < 200; i++) {
-         const confetti = document.createElement('div');
-         confetti.classList.add('confetti');
-         confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
-         confetti.style.borderRadius = tamanho[Math.floor(Math.random() * tamanho.length)];
-         confetti.style.left = Math.random() * 100 + '%';
-         confetti.style.animationDelay = Math.random() * i / 10 + 's';
-         document.body.appendChild(confetti);
-     }
-     confettiBtn.style = "display: none;"
- }
+        for (let i = 0; i < 200; i++) {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.borderRadius = tamanho[Math.floor(Math.random() * tamanho.length)];
+            confetti.style.left = Math.random() * 100 + '%';
+            confetti.style.animationDelay = Math.random() * i / 10 + 's';
+            document.body.appendChild(confetti);
+        }
+        confettiBtn.style = "display: none;"
+    }
 
- const confettiBtn = document.getElementById('confetti-btn');
- confettiBtn.addEventListener('click', createConfetti);
-
-
+    const confettiBtn = document.getElementById('confetti-btn');
+    confettiBtn.addEventListener('click', createConfetti);
 </script>
