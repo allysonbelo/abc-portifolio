@@ -32,22 +32,3 @@
         </div>
     </section>
 </div>
-
-<!-- <script>
-    const arrowDiv = document.querySelector('.hero__content--arrows');
-    let scrollAmount;
-
-    //Verifica se é mobile ou desktop
-    if (window.innerWidth <= 768) {
-        scrollAmount = 700;
-    } else {
-        scrollAmount = 1050;
-    }
-
-    arrowDiv.addEventListener('click', () => {
-        window.scrollBy({
-            top: scrollAmount,
-            behavior: 'smooth'
-        });
-    });
-</script> -->
