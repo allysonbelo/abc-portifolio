@@ -38,6 +38,8 @@
     border-radius: 17px;
     width: 100%;
     height: auto;
+    max-height: clamp(256px, 53vw, 400px);
+    object-fit: cover;
 }
 
 .post__content--project {
@@ -142,5 +144,9 @@
         column-gap: 20px;
         row-gap: 70px;
         align-items: flex-start;
+    }
+
+    .post__content--image img {
+        max-height: 410px;
     }
 }
