@@ -16,7 +16,7 @@
             <p class="hero__content--text"><?php echo $paragraph; ?></p>
             <?php if (!is_page('projetos')) {
             ?>
-                <a href="<?php echo $link_button ?>" class="hero__content--button" target="_blank"><?php echo $text_button; ?></a>
+                <a href="<?php echo $link_button ?>" class="hero__content--button"><?php echo $text_button; ?></a>
             <?php
             }
 
