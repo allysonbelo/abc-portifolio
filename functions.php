@@ -17,6 +17,7 @@ function abcdev_load_scripts()
     wp_enqueue_style('abcdev-pagination', get_template_directory_uri() . '/styles/pagination.css', array(), filemtime(get_template_directory() . '/styles/pagination.css'), 'all');
     wp_enqueue_style('abcdev-footer', get_template_directory_uri() . '/styles/footer.css', array(), filemtime(get_template_directory() . '/styles/footer.css'), 'all');
     wp_enqueue_style('abcdev-slides', get_template_directory_uri() . '/styles/slides.css', array(), filemtime(get_template_directory() . '/styles/slides.css'), 'all');
+    wp_enqueue_style('abcdev-about', get_template_directory_uri() . '/styles/about.css', array(), filemtime(get_template_directory() . '/styles/about.css'), 'all');
     //Styles - End
 
     //Font - Start
