@@ -4,6 +4,7 @@
         "content"
         "form";
     min-height: 100vh;
+    row-gap: 60px;
 }
 
 .contact__content,
@@ -17,7 +18,7 @@
 
 .contact__content {
     grid-area: content;
-    row-gap: 20px;
+    row-gap: 30px;
 }
 
 .contact__content--title {
@@ -46,11 +47,90 @@
 
 .contact__info--title {
     width: 80px;
+    font-weight: 600;
 }
 
 .contact__form {
     grid-area: form;
+    border: 1px solid #2C2D32;
+    box-shadow: -11px 9px 11px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 20px;
+    row-gap: 20px;
+    width: 100%;
 }
+
+.contact__form--form {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+}
+
+.contact__form--form label {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.contact__form--form input {
+    width: 100%;
+    display: block;
+    background-color: transparent !important;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: var(--color-orange);
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    line-height: 170.53%;
+}
+
+.contact__form--form input[type=number]::-webkit-inner-spin-button,
+.contact__form--form input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0px 1000px #0d1925;
+    -webkit-text-fill-color: var(--color-orange);
+}
+
+.contact__form--form input:focus {
+    caret-color: var(--color-orange);
+}
+
+.contact__form--form textarea {
+    width: 100%;
+    max-width: 569px;
+    min-width: 250px;
+    max-height: 250px;
+    min-height: 50px;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    background-color: #080e147a;
+    color: var(--color-orange);
+}
+
+.contact__form--form .hero__content--button {
+    cursor: pointer;
+}
+
 
 @media (min-width:767.8px) {
     .contact {
@@ -59,6 +139,12 @@
         grid-template-areas:
             "content form";
         grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact__content {
+        row-gap: 50px;
     }
 
     .contact__content--text {

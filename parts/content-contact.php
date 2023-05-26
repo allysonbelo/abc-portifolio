@@ -28,15 +28,15 @@
                 </label>
                 <label>
                     Your phone
-                    <input type="text">
+                    <input type="number">
                 </label>
                 <label>
                     Your e-mail
-                    <input type="text">
+                    <input type="email">
                 </label>
                 <label>
                     Message
-                    <input type="text">
+                    <textarea id="mensagem" name="mensagem" rows="5" maxlength="250" resize="none"></textarea>
                 </label>
                 <button class="hero__content--button">Send</button>
             </form>

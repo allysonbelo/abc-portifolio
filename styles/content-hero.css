@@ -54,6 +54,7 @@
 }
 
 .hero__content--button {
+    all: unset;
     width: clamp(150px, 18vw, 182px);
     height: 45.53px;
     color: var(--color-white);
