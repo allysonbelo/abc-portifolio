@@ -45,7 +45,7 @@ $arquivo = "
   </html>
   ";
 
-$to = 'allysonbelo@gmail.com';
+$to = 'contato@allysonbelo.com';
 $subject = 'Novo formulário de contato';
 
 // Set email headers
