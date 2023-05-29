@@ -162,11 +162,6 @@ body {
     display: block;
   }
 
-  .header__wrapper .desktop .current-menu-item>a {
-    color: var(--color-orange);
-    border-bottom: 2px solid var(--color-orange);
-  }
-
 }
 
 @media (min-width:1200px) {}

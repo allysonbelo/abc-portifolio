@@ -1,4 +1,4 @@
-:root{
+:root {
   --color-orange: #E8541D;
   --color-bg: #36373C;
   --color-white: #FFFFFF;
@@ -16,7 +16,7 @@ html {
   scroll-behavior: smooth;
 }
 
-*::selection{
+*::selection {
   background-color: var(--color-orange);
 }
 
@@ -28,12 +28,22 @@ html {
   align-items: center;
 }
 
-.wrapper{
+.wrapper {
   max-width: 1368px;
   width: 100%;
   padding: 0px 20px 0px 20px;
   box-sizing: border-box;
 }
 
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif; */
+.separador {
+  display: none;
+}
+
+@media (min-width:767.8px) {
+  .separador {
+    margin-left: 5.8%;
+    margin-top: 5.8%;
+    border-bottom: 2px solid var(--color-orange);
+    display: block;
+  }
+}
