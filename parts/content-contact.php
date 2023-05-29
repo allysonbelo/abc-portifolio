@@ -21,24 +21,19 @@
 
         <div class="contact__form">
             <h2 class="contact__content--title">Contact Form</h2>
-            <form class="contact__form--form" action="#">
-                <label>
-                    Your name
-                    <input type="text">
-                </label>
-                <label>
-                    Your phone
-                    <input type="number">
-                </label>
-                <label>
-                    Your e-mail
-                    <input type="email">
-                </label>
-                <label>
-                    Message
-                    <textarea id="mensagem" name="mensagem" rows="5" maxlength="250" resize="none"></textarea>
-                </label>
-                <button class="hero__content--button">Send</button>
+            <form method="post" class="contact__form--form" action="<?php echo get_template_directory_uri() . '/includes/contato.php'; ?>">
+                <label for="name">Nome:</label>
+                <input type="text" name="name" id="name">
+
+                <label for="phone">Telefone:</label>
+                <input type="text" name="phone" id="phone">
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email">
+
+                <label for="message">Mensagem:</label>
+                <textarea name="mensagem" id="mensagem"></textarea>
+                <button type="submit" class="hero__content--button">Enviar</button>
             </form>
         </div>
     </section>

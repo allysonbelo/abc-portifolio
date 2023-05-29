@@ -31,8 +31,6 @@
             <img src="<?php echo $hero_background ?>" alt="">
         </div>
 
-
-
     </section>
     <div class="separador"></div>
 </div>
